@@ -1,6 +1,6 @@
 # 🧠 QuizWhiz
 
-> **Built for SENG 513 - Human-Computer Interaction I (Fall 2024)**
+> **Built for SENG 513 - Web-Based Systems (Winter 2024)**
 > *A dynamic quiz platform where you create the questions, and test yourself (or your friends) for fun and knowledge.*
 
 ---
