@@ -1,0 +1,213 @@
+:root {
+    --light-f-clr: white;
+    --dark-f-clr: black;
+    --primary-bg-clr: #474F7A;
+    --secondary-bg-clr: #000d34;
+    --accent-clr: #FC6736;
+    --header-clr: #ffffff;
+    --red-button: red;
+    --green-button: green;
+    --ff: "Roboto", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--primary-bg-clr);
+    font-size: clamp(1rem, 1rem + 0.15vw, 1.3rem);
+    color: var(--light-f-clr);
+    font-family: var(--ff);
+}
+
+button {
+    font-size: clamp(1rem, 1rem + 0.15vw, 1.3rem);
+    border-radius: 8px;
+}
+
+.header-container{
+    background-color: var(--header-clr);
+    font-size: clamp(1rem, 1rem + 0.5vw, 2rem);
+    color: var(--dark-f-clr);
+    text-align: center;
+    padding: 1rem;
+}
+
+.outer-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.general-container {
+    /* Create inner box and curve the edges*/
+    width: 80%;
+    height: 95%;
+    /*border: 3px solid green;*/
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background-color: var(--secondary-bg-clr);
+
+    margin: 0.5rem;
+}
+
+.score-container {
+    background-color: var(--accent-clr);
+}
+
+.quiz-container{
+    /* Center content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.question-container h2, .score-container h2 {
+    /*border: 1px solid red;*/
+    text-align: center;
+    font-size: clamp(1.2rem, 1.2rem + 0.5vw, 2rem);
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+.question-num {
+    border-bottom: 3px solid var(--accent-clr);
+}
+
+#question .difficulty{
+    font-size: 0.9rem;
+    font-weight: 500;
+    background-color: var(--accent-clr);
+    color: var(--light-f-clr);
+    padding: .2rem .4rem;
+    border-radius: .2rem;
+    margin-top: 0.5rem;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+#question .category{
+    font-size: 0.9rem;
+    font-weight: 500;
+    background-color: var(--primary-bg-clr);
+    color: var(--light-f-clr);
+    padding: .2rem .4rem;
+    border-radius: .2rem;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.answers-button {
+    display: flex;
+    flex-direction: column;
+}
+
+.a-btns {
+    width: 50vw;
+    text-align: left;
+    margin: 0.8rem 0; /* Spacing between buttons vertically */
+    padding: 1.5rem; /* top/bot and left and right */
+}
+
+.a-btns:hover, .s-btn:hover {
+    color: var(--light-f-clr);
+    background-color: var(--accent-clr);
+}
+
+.s-btn {
+    min-width: 20vw;
+    margin-top: 1rem;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+/*hide play-again initially*/
+#play-again{
+    display: none;
+}
+
+.score-history-table {
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+.score-history-table caption, th, td {
+    padding: 0.5rem 1rem;
+    text-align: center;
+
+}
+
+.score-history-table caption {
+    font-size: clamp(1rem, 1rem + 0.5vw, 2rem);
+    font-weight: 700;
+    text-transform: uppercase;
+    background: var(--accent-clr);
+}
+
+.user-container {
+    padding: 1rem;
+    text-align: center;
+    box-sizing: border-box; /* to include the padding in dimensions */
+}
+.display-username{
+    display: block;
+}
+
+#submit-username{
+    display: block;
+}
+
+#enter-username-label{
+    display: block;
+}
+
+#input-username{
+    display: block;
+}
+.username-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.input-username-field{
+    border-radius: 8px;
+    font-size: clamp(1rem, 1rem + 0.15vw, 1.3rem);
+    width: 25%;
+    padding: 0.5rem 1rem;
+}
+
+.user-btn {
+    min-width: 10%;
+    padding: 0.5rem;
+}
+
+.user-btn:hover {
+    color: var(--light-f-clr);
+    background-color: var(--accent-clr);
+}
+
+/*Class to allow button to change to green when the answer is correct*/
+.correct-answer {
+    background-color: var(--green-button);
+    color: var(--light-f-clr);
+}
+
+/*Class to allow button to change to red when the answer is incorrect*/
+.incorrect-answer {
+    background-color: var(--red-button);
+    color: var(--light-f-clr);
+}
+
+/*Class to change the button back to default colors*/
+.default-button{
+    color: var(--dark-f-clr);
+    background-color: var( --light-f-clr);
+}
