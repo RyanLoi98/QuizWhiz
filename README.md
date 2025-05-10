@@ -52,7 +52,7 @@ Whether you're a student reviewing course content or just want to challenge your
 
 ## 🚀 How to Use
 
-1. **Open the quiz.html file** in your browser.
+1. **Open the index.html file** in your browser.
 
 2. **Enter a Username.**
    This is used to track score history.
