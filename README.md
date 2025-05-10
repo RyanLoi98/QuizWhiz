@@ -13,7 +13,7 @@
 
 ## 🌐 Live Demo
 
-🔗 [Live Demo](https://your-live-link.glitch.me)
+🔗 [Live Demo](https://quiz-whiz-three.vercel.app/)
 
 ---
 
