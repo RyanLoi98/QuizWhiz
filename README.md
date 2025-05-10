@@ -19,7 +19,7 @@
 
 ## 🎯 Overview
 
-This interactive quiz web application allows users to play a 10 question quiz game with random questions taken from an online trivia database featuring easy, medium, and hard questions from entertainment, video games, history, science, geography and modern pop culture. Designed with user experience and educational engagement in mind, it supports: a multiple choice approach, scoring, and a high score arcade style tracking system — all built with **vanilla JavaScript, HTML5, and CSS3**.
+This interactive quiz web application allows users to play a 10 question quiz game with random questions taken from an online trivia database featuring easy, medium, and hard questions from entertainment, video games, history, science, geography, modern pop culture and much more. Designed with user experience and educational engagement in mind, it supports: a multiple choice approach, scoring, and a high score arcade style tracking system — all built with **vanilla JavaScript, HTML5, and CSS3**.
 
 Whether you're a student reviewing course content or just want to challenge your friends with quirky trivia, this quiz app gives you full control.
 
